@@ -7,7 +7,7 @@ Git kan ingenting om kontekst, så som språk, filtyper osv. og kan derfor ikke 
 Det som derfor skjer i denne type operasjoner ved konflikter, er at operasjonen stoppes og en må ta stilling til hvordan konflikten skal løses. 
 Deretter gjenopptar en den stoppede operasjonen. Om det ikke er ytterligere problemer, fullføres denne.
 
-Når Git stopper en slik operasjon, blir det gitt ganske gode indtruksjoner om hvordan en kommer seg videre eller avbryter.
+Når Git stopper en slik operasjon, blir det gitt ganske gode instruksjoner om hvordan en kommer seg videre eller avbryter.
 
 ## Manuell Konfliktløsning
 I branch--en `oppgave6-main` `commit 1` er det lagt til en ny fil: `/Oppgaver/Oppgave 6/lorem.txt` . 
@@ -57,7 +57,7 @@ Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver
 >>>>>>> oppgave6-fix
 ```
 Dette er formatet git bruker for å indikere konflikt. 
-Om det er flere konflikter i samme file, vil det være gjentakelser i dette mønsteret.
+Om det er flere konflikter i samme fil, vil det være gjentakelser i dette mønsteret.
 En enkel måte å finne dette er å søke i fila etter `<<<<<<`. Dette skulle være et mønster som ikke alt for ofte ligger i en fil med vilje.
 En kan også se hvor de enkelte delene av konflikten har sitt opphav. 
 `HEAD` er enden av gjeldende branch, altså `oppgave6-main`. `oppgave6-fix`er åpenbart den andre branch-en.
